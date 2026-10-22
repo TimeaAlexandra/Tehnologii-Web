@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborator 3 - CSS Layouts & Selectors</title>
+    <link rel="stylesheet" href="css/lab3_style.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <h1>Laborator 3 - Tehnologii Web</h1>
+        <p>Exerciții CSS Selectors, Box Model, Flexbox și Grid</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Pasul 1: CSS Selectors & Specificity -->
+        <section class="exercise-section">
+            <h2>Pasul 1: Specificitate CSS</h2>
+            <p class="important">An important paragraph</p>
+            <p class="explanation">
+                <strong>Verificare DevTools:</strong> Regula <code>p.important</code> câștigă în fața regulii <code>.important</code> deoarece are specificitate mai mare (scor 0,1,1 față de 0,1,0).
+            </p>
+        </section>
+
+        <!-- Pasul 2: CSS Box Model -->
+        <section class="exercise-section">
+            <h2>Pasul 2: CSS Box Model</h2>
+            <div class="box-model-container">
+                <div class="card-a">
+                    <h3>Card A (content-box)</h3>
+                    <p>Width: 250px | Padding: 20px | Border: 5px</p>
+                    <p><strong>Lățime totală reală: 300px</strong> (250 + 40 + 10)</p>
+                </div>
+                <div class="card-b">
+                    <h3>Card B (border-box)</h3>
+                    <p>Width: 250px | Padding: 20px | Border: 5px</p>
+                    <p><strong>Lățime totală reală: 250px</strong> (include padding și border)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pasul 3: Flexbox Navigation Bar -->
+        <section class="exercise-section">
+            <h2>Pasul 3: Flexbox Navbar</h2>
+            <nav class="navbar">
+                <div class="brand">MyBrand</div>
+                <div class="nav-links">
+                    <a href="#home">Acasă</a>
+                    <a href="#about">Despre</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Pasul 4: CSS Grid Gallery -->
+        <section class="exercise-section">
+            <h2>Pasul 4: CSS Grid Gallery (Responsive)</h2>
+            <div class="gallery">
+                <div class="gallery-card"><h3>Card 1</h3><p>Conținut card galerie...</p></div>
+                <div class="gallery-card"><h3>Card 2</h3><p>Conținut card galerie...</p></div>
+                <div class="gallery-card"><h3>Card 3</h3><p>Conținut card galerie...</p></div>
+                <div class="gallery-card"><h3>Card 4</h3><p>Conținut card galerie...</p></div>
+                <div class="gallery-card"><h3>Card 5</h3><p>Conținut card galerie...</p></div>
+                <div class="gallery-card"><h3>Card 6</h3><p>Conținut card galerie...</p></div>
+            </div>
+        </section>
+
+        <!-- Pasul 5: Responsive Layout (Sidebar + Main) -->
+        <section class="exercise-section">
+            <h2>Pasul 5: Layout Responsiv (Sidebar + Main)</h2>
+            <div class="layout">
+                <aside class="sidebar">
+                    <h3>Sidebar</h3>
+                    <ul>
+                        <li><a href="#">Meniu 1</a></li>
+                        <li><a href="#">Meniu 2</a></li>
+                        <li><a href="#">Meniu 3</a></li>
+                    </ul>
+                </aside>
+                <main class="main-content">
+                    <h3>Conținut Principal</h3>
+                    <p>Această secțiune este pe o singură coloană pe mobil și devine pe 2 coloane pe ecrane de peste 768px.</p>
+                </main>
+            </div>
+        </section>
+
+        <div class="link-next">
+            <a href="bootstrap-gallery.html" class="btn-link">Mergi la Pasul 6 (Bootstrap 5 Gallery) &rarr;</a>
+        </div>
+
+    </main>
+
+</body>
+</html>
