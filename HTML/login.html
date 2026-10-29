@@ -13,15 +13,17 @@
             <img src="../MEDIA/logo.png" alt="Imagine login">
         </div>
         <div class="separator"></div>
-        <div class="login-form">
+        <form id="loginForm" class="login-form">
             <h2>Login</h2>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Parola">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Parola" required>
             <button type="submit">Login</button>
             <p class="register-text">
                 Nu ai cont? <a href="#">Înregistrează-te</a>
             </p>
-        </div>
+        </form>
     </div>
+
+    <script src="../JS/login_js.js"></script>
 </body>
 </html>

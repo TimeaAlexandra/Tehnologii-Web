@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universități din România - Comunitatea TW</title>
+    <link rel="stylesheet" href="../CSS/universities_style.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <a href="home.html" class="back-link">&larr; Înapoi la Acasă</a>
+        <h1>Universități din România</h1>
+    </header>
+
+    <main class="main-container">
+        <div class="controls-container">
+            <div class="filter-group">
+                <label for="q">Filtru (opțional):</label>
+                <input id="q" type="text" placeholder="caută după nume..." autocomplete="off">
+            </div>
+            <button id="exportBtn" class="btn-export">Export CSV</button>
+        </div>
+
+        <div id="status" class="status">Se încarcă...</div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nume</th>
+                        <th>Țară</th>
+                        <th>Site</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../JS/universities_js.js"></script>
+</body>
+</html>
