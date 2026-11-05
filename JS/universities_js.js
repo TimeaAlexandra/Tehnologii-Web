@@ -99,5 +99,4 @@ if (exportBtn) {
     });
 }
 
-// Executăm direct încărcarea
 loadUniversities();
